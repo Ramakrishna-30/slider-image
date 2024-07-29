@@ -1,0 +1,256 @@
+/* * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.slide-button {
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: black;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.slide-button:hover {
+    background: gray;
+}
+
+.img-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: 0;
+    gap: 18px;
+}
+
+.image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+}
+
+.img-list::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    background: darkgrey;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+    height: 2px;
+    width: 100%;
+    background: darkgrey;
+    position: relative;
+    border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+}
+
+.scrollbar-thumb {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: black;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+.scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+}
+
+#prev-slide {
+    left: -20px;
+    display: none;
+}
+
+#next-slide {
+    right: -20px;
+}
+
+.slide {
+    position: relative;
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.slide.slide-button{
+    height: 50px;
+    width: 50px;color: white;
+    background-color: black;
+    font-size: 2.2 rem;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+
+}
+.slide.slide-button:hover{
+    background: gray;
+}
+
+
+.slide .img-list{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: 0;
+    gap: 18px;
+
+}
+
+.slide .img-list .image-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.container{
+    max-width: 1200px;
+    width: 95%;
+
+}
+
+.slide .img-list::-webkit-scrollbar{
+    display: none;
+}
+
+.container .slider-scrollbar{
+    height: 24px;
+    width: 100%;
+    background: darkgrey;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track{
+    height: 2px;
+    width: 100%;
+    background: darkgrey;
+    position: relative;
+    border-radius: 4px;
+
+
+
+}
+
+.slider-scrollbar:hover .scrollbar-track{
+    height: 4px;
+
+
+}
+
+
+.slider-scrollbar .scrollbar-thumb{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: black;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+
+.slider-scrollbar.scrollbar-thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:-10px;
+    bottom: -10px;
+}
+
+    
+.slider-scrollbar .scrollbar-thumb:active{
+    cursor: grabbing;
+    height: 8px;
+    width: -2px;
+ 
+
+}
+
+.slide.slide-button #prev-slide{
+    left: -20px;
+    display: none;
+
+}
+
+.slide.slide-button #next-slide{
+    right: -20px;
+    
+}
+
+.slide{
+    position: relative;
+}
+ 
+
